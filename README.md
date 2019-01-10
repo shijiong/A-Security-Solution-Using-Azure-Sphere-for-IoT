@@ -1,5 +1,6 @@
 # A Security Solution Using Azure Sphere for IoT
 The Azure Sphere based security solution for Internet of Things (IoT) proposed in this project, which utilizes the fully integrated, high performance MT3620 microcontroller unit (MCU), as well as Microsoft Azure cloud services, can be used to meet the requirements of modern, robust end-to-end security user scenarios.
+![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/Cover.png)
 
 # Hardware Requirement
 1. Azure Sphere MT3620 development kit (Seeed Studio).
