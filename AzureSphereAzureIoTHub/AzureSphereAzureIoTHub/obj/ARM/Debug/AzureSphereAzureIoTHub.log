@@ -1,0 +1,34 @@
+﻿main.c(151,13): warning :  function declaration isn't a prototype [-Wstrict-prototypes]
+main.c(151,13): warning :  static void UARTEventHandler()
+main.c(151,13): warning :              ^~~~~~~~~~~~~~~~
+main.c(123,13): warning :  'SendUartMessage' defined but not used [-Wunused-function]
+main.c(123,13): warning :  static void SendUartMessage(int uartFd, const char *dataToSend)
+main.c(123,13): warning :              ^~~~~~~~~~~~~~~
+  Azure Sphere Utility version 18.11.3.20146
+  Copyright (C) Microsoft Corporation. All rights reserved.
+   
+  Start time (UTC): Sunday, 18 November 2018 07:39:46 
+  verbose: Creating image package. 
+  verbose: Azure Sphere application image package written. 
+  verbose: Appending metadata. 
+  verbose: Wrote metadata:
+    Section: Identity
+      Image Type:           Application
+      Component ID:         1977c307-e5d8-48f4-b268-aa754591b6bd
+      Image ID:             4f61d909-781e-479b-bdda-e835cb19b73b
+    Section: Signature
+      Signing Type:         ECDsa256
+      Cert:                 a8d5cc6958f48710140d7a26160fc1cfc31f5df0
+    Section: Debug
+      Image Name:           AzureSphereAzureIoTHub
+      Built On (UTC):       2018/11/18 7:39:47
+      Built On (Local):     2018/11/18 15:39:47
+    Section: Temporary Image
+      Remove image at boot: False
+      Under development:    True
+    Section: ABI Depends
+      Depends on:           ApplicationRuntime, version 1
+   
+  verbose: Packaging completed successfully. 
+  verbose: Output file is at: C:\Users\ShiJiong\Documents\Visual Studio 2017\Projects\AzureSphereAzureIoTHub\AzureSphereAzureIoTHub\bin\ARM\Debug\AzureSphereAzureIoTHub.imagepackage 
+  Command completed successfully in 00:00:01.2374318. 
