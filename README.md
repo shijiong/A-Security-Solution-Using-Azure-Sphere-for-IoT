@@ -35,7 +35,7 @@ The Azure Sphere based security solution for Internet of Things (IoT) proposed i
 3. Build the application and run it on local PC.
 
 # Create Azure IoTHub
-IoT Hub service is used to gather all the data that sent from the SeeeduinoCloud. The IoTHub service is created as follows.
+IoT Hub service is used to gather all the data that sent from the Azure Sphere devices. The IoTHub service is created as follows.
 1. In the [Azure Portal](https://portal.azure.com), click the on the "New" icon along the left to see all the services, then click the "Internet of Things" item and choose “IoT Hub”.
 2. Complete the fields of “Name”, “Pricing Tier”, “IoT Hub Units”, “Device-to-Cloud Partitions”, “Resource group” and “location”, then click the "Create" button. It should be noted that “F1 Free” Pricing is enough for our project. And we’d better choose the local location of the service.
 3. Wait for the new IoT hub to show as "Online". When it is ready, open the blade of the new IoT hub, take note of the URI and select the key icon at the top to access to the shared access policy settings.
@@ -69,7 +69,8 @@ It should be noticed that we just select all the data from IoTHub to PowerBI. Cl
 Now that the datasource is created, go back to Power BI session, and find My Workspace by clicking the Power BI link. After some minutes of the job running you will see that the dataset that you configured as an output for the Job, is now displayed in the Power BI workspace Datasets section.
 Please note that the Power BI dataset will only be created if the job is running and if it is receiving data from the IoT Hub input, so check that the MT3620 is working and sending data to Azure to ensure that the dataset be created. To check if the Stream Analytics job is receiving and processing data you can check the Azure Management Stream Analytics monitor.
 Once the datasource becomes available you can start creating reports. To create a new Report, click on the Power BI datasource.
-The Report designer will be opened showing the list of fields available for the selected datasource and the different visualizations supported by the tool. Here we choose Humidity, sound, light and temperature value as Y axis, and measurement time as X axis. Now the report is almost ready. Click the SAVE button and set the name for the report.
+The Report designer will be opened showing the list of fields available for the selected datasource and the different visualizations supported by the tool. Here we choose Humidity, sound, light and temperature value as Y axis, and measurement time as X axis. Now the report is almost ready. Click the SAVE button and set the name for the report. The following figure shows the reports in editor view including average temperature, average humidity, maximum light, minimum sound, real-time sound and light, real-time temperature and humidity.
+![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/powerbiview.png)
 
 # Browse the data anywhere anytime you want
 With [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/), we can get the data from Power BI Web and display the data report that we create above on desktop PC.
