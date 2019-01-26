@@ -1,5 +1,5 @@
 # A Security Solution Using Azure Sphere for IoT
-The Azure Sphere based security solution for Internet of Things (IoT) proposed in this project, which utilizes the fully integrated, high performance MT3620 microcontroller unit (MCU), as well as Microsoft Azure cloud services, can be used to meet the requirements of modern, robust end-to-end security user scenarios.
+The Azure Sphere based security solution for Internet of Things (IoT) proposed in this project, which utilizes the fully integrated, high performance MT3620 microcontroller unit (MCU), as well as Microsoft Azure cloud services, can be used to meet the requirements of modern, robust end-to-end security user scenarios.  
 ![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/Cover.png)
 
 # Hardware requirement
@@ -69,9 +69,11 @@ It should be noticed that we just select all the data from IoTHub to PowerBI. Cl
 Now that the datasource is created, go back to Power BI session, and find My Workspace by clicking the Power BI link. After some minutes of the job running you will see that the dataset that you configured as an output for the Job, is now displayed in the Power BI workspace Datasets section.
 Please note that the Power BI dataset will only be created if the job is running and if it is receiving data from the IoT Hub input, so check that the MT3620 is working and sending data to Azure to ensure that the dataset be created. To check if the Stream Analytics job is receiving and processing data you can check the Azure Management Stream Analytics monitor.
 Once the datasource becomes available you can start creating reports. To create a new Report, click on the Power BI datasource.
-The Report designer will be opened showing the list of fields available for the selected datasource and the different visualizations supported by the tool. Here we choose Humidity, sound, light and temperature value as Y axis, and measurement time as X axis. Now the report is almost ready. Click the SAVE button and set the name for the report. The following figure shows the reports in editor view including average temperature, average humidity, maximum light, minimum sound, real-time sound and light, real-time temperature and humidity.
+The Report designer will be opened showing the list of fields available for the selected datasource and the different visualizations supported by the tool. Here we choose Humidity, sound, light and temperature value as Y axis, and measurement time as X axis. Now the report is almost ready. Click the SAVE button and set the name for the report. The following figure shows the reports in editor view including average temperature, average humidity, maximum light, minimum sound, real-time sound and light, real-time temperature and humidity.  
 ![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/powerbiview.png)
 
 # Browse the data anywhere anytime you want
-With [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/), we can get the data from Power BI Web and display the data report that we create above on desktop PC.
-With Power BI application on iOS or Android, we can get the data from Power BI Web and display the data report on mobile phone.
+With [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/), we can get the data from Power BI Web and display the data report that we create above on desktop PC. See the report as follows.  
+![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/PowerBIDesktop.png)
+With Power BI application on iOS or Android, we can get the data from Power BI Web and display the data report on mobile phone. See the reports on Andorid device as follows.  
+![image](https://github.com/shijiong/A-Security-Solution-Using-Azure-Sphere-for-IoT/blob/master/PowerBIMobile.png)
